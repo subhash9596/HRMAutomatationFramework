@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrm.testcases.ForgotPasswordTest">
+      <class name="com.hrm.testcases.AdminUserManagmentTest">
         <methods>
-          <include name="passWordRest" invocation-numbers="0"/>
+          <include name="startExtedReport"/>
           <include name="setUp"/>
+          <include name="login"/>
           <include name="tearDown"/>
+          <include name="endExtedReport"/>
+          <include name="addUserInformation" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.hrm.testcases.ForgotPasswordTest -->
+      </class> <!-- com.hrm.testcases.AdminUserManagmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

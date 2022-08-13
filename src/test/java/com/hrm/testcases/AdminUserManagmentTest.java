@@ -2,7 +2,6 @@ package com.hrm.testcases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
-
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -10,18 +9,20 @@ import com.hrm.baseclass.Base;
 import com.hrm.dataProvider.StaticDataProvider;
 import com.hrm.pages.AdminUserManagement;
 import com.hrm.utilities.CommanMethods;
-
+import com.hrm.utilities.ConfigReader;
+import com.hrm.utilities.ExtendReport;
 
 public class AdminUserManagmentTest extends Base {
 	@BeforeMethod
 	public void login() {
 		HRMloginTest login = new HRMloginTest();
-		login.loginHRMAdmin("Admin", "admin123");
+		login.loginHRMAdmin(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"));
 	}
 
 	@Test(dataProviderClass = StaticDataProvider.class, dataProvider = "Adduser_Data")
-	public void updateUser(String UserRole, String EmployeeName, String Username, String Status, String Password,
-			String ConfirmPassword) throws InterruptedException {
+	public void addUserInformation(String UserRole, String EmployeeName, String Username, String Status,
+			String Password, String ConfirmPassword) throws InterruptedException {
+		ExtendReport.extendTest = ExtendReport.extentReports.createTest("Add User Information");
 		AdminUserManagement adminusermanagment = new AdminUserManagement();
 		// MouseOver the admin link
 		Thread.sleep(5000);
@@ -59,20 +60,16 @@ public class AdminUserManagmentTest extends Base {
 		sa.assertEquals(actResult, expResult);
 	}
 
-	@Test(priority = 2, dataProviderClass = StaticDataProvider.class, dataProvider = "Searchuser_Data")
-	public void searchUser(String SearchUsername) throws InterruptedException {
+	@Test(dataProviderClass = StaticDataProvider.class, dataProvider = "Searchuser_Data")
+	public void searchSystemUser(String SearchUsername) throws InterruptedException {
+		ExtendReport.extendTest = ExtendReport.extentReports.createTest("Search User Inforamtion");
 		AdminUserManagement adminusermanagment = new AdminUserManagement();
-		// MouseOver the admin link
 		Thread.sleep(5000);
 		CommanMethods.click(adminusermanagment.admin);
-		// User Management
 		CommanMethods.click(adminusermanagment.usermanagement);
-		// Click on Add User
 		Thread.sleep(5000);
 		CommanMethods.click(adminusermanagment.users);
-		// Enter Username
-		CommanMethods.sendText(adminusermanagment.usernaemsearch, SearchUsername);
-		// Click on Search Button
+		CommanMethods.sendText(adminusermanagment.usernaemsearch,SearchUsername);
 		CommanMethods.click(adminusermanagment.searchbutton);
 	}
 

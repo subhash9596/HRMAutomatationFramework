@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!--listeners> 
+<listener class-name="">com.hrm.utilities.ITestListner</listener>
+</listeners-->
+	<test name="Test" parallel="none" thread-count="2">
+		<classes>
+			<class name="com.hrm.testcases.AdminUserManagmentTest" />
+			<class name="com.hrm.testcases.HRMloginTest" />
+			<class name="com.hrm.testcases.ForgotPasswordTest" />
+			<class name="com.hrm.testcases.DashboardTest" />
+			<class name="com.hrm.testcases.JobTitlesTest" />
+			<class name="com.hrm.testcases.EmploymentStatusTest" />
+			<class name="com.hrm.testcases.PayGradesTest" />
+			<class name="com.hrm.testcases.JobCategoryTest" />
+			<class name="com.hrm.testcases.WorkShiftTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -2,7 +2,6 @@ package com.hrm.testcases;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -10,7 +9,7 @@ import com.hrm.baseclass.Base;
 import com.hrm.dataProvider.StaticDataProvider;
 import com.hrm.pages.JobCategory;
 import com.hrm.utilities.CommanMethods;
-import com.hrm.utilities.ExcelUtility;
+import com.hrm.utilities.ExtendReport;
 
 public class JobCategoryTest extends Base {
 	@BeforeMethod
@@ -21,6 +20,7 @@ public class JobCategoryTest extends Base {
 
 	@Test(dataProviderClass = StaticDataProvider.class, dataProvider = "JobCategory_Data")
 	public void addJobCategory(String Name) throws InterruptedException {
+		ExtendReport.extendTest = ExtendReport.extentReports.createTest("Add Job Category");
 		JobCategory jobcategory = new JobCategory();
 		Thread.sleep(5000);
 		CommanMethods.click(jobcategory.admin);

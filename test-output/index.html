@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>E:\HrmProjectPOM\testng.xml</span>
+                    <span>E:\HrmProjectPOM\src\main\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                    <span class="method-stats">11 methods, 2 failed,  1 skipped,  8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,29 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.AdminUserManagmentTest" class="method navigator-link" hash-for-method="addUserInformation(Admin, John Doe, johndoe, Enabled, johndoe9596, johndoe9596)">addUserInformation(Admin, John Doe, johndoe, Enabled, johndoe9596, johndoe9596)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.ForgotPasswordTest" class="method navigator-link" hash-for-method="passWordRest(subhash)">passWordRest(subhash)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.AdminUserManagmentTest" class="method navigator-link" hash-for-method="searchSystemUser">searchSystemUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -153,22 +172,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.HRMloginTest" class="method navigator-link" hash-for-method="invalidUsername">invalidUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.HRMloginTest" class="method navigator-link" hash-for-method="invalidpassword">invalidpassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.HRMloginTest" class="method navigator-link" hash-for-method="loginHRMAdmin(Admin, admin123)">loginHRMAdmin(Admin, admin123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.hrm.testcases.HRMloginTest" class="method navigator-link" hash-for-method="validAdminLogin">validAdminLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -186,6 +190,45 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.hrm.testcases.AdminUserManagmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUserInformation(Admin, John Doe, johndoe, Enabled, johndoe9596, johndoe9596)">
+                  </a> <!-- addUserInformation(Admin, John Doe, johndoe, Enabled, johndoe9596, johndoe9596) -->
+                  <span class="method-name">addUserInformation</span>
+                  <span class="parameters">(Admin, John Doe, johndoe, Enabled, johndoe9596, johndoe9596)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;message success fadable&apos; and contains(text(), &apos;Successfully Saved&apos;)]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;SUBHASHA-PC&apos;, ip: &apos;192.168.1.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\Subhash\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a7fe13d9942e9af12dbde11c01a8c5f
+*** Element info: {Using=xpath, value=//div[@class=&apos;message success fadable&apos; and contains(text(), &apos;Successfully Saved&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.hrm.testcases.AdminUserManagmentTest.addUserInformation(AdminUserManagmentTest.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.hrm.testcases.ForgotPasswordTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -198,7 +241,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	expected [Please contact HR admin in order to reset the password] but found [Please contact HR admin in order to reset the password
 Close]
-	at com.hrm.testcases.ForgotPasswordTest.passWordRest(ForgotPasswordTest.java:28)
+	at com.hrm.testcases.ForgotPasswordTest.passWordRest(ForgotPasswordTest.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -206,6 +249,110 @@ Close]
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.hrm.testcases.AdminUserManagmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchSystemUser">
+                  </a> <!-- searchSystemUser -->
+                  <span class="method-name">searchSystemUser</span>
+                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;org.apache.poi.ss.usermodel.Row.getCell(int)&quot; is null
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;org.apache.poi.ss.usermodel.Row.getCell(int)&quot; is null
+	at com.hrm.utilities.ExcelUtility.cellData(ExcelUtility.java:37)
+	at com.hrm.utilities.ExcelUtility.excelIntoArray(ExcelUtility.java:54)
+	at com.hrm.dataProvider.StaticDataProvider.getTestDataSearch(StaticDataProvider.java:29)
+	... 25 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.JobCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addJobCategory(Test-QA)">
+                  </a> <!-- addJobCategory(Test-QA) -->
+                  <span class="method-name">addJobCategory</span>
+                  <span class="parameters">(Test-QA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.WorkShiftTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addWorkShift(NightShift, Dominic Chase)">
+                  </a> <!-- addWorkShift(NightShift, Dominic Chase) -->
+                  <span class="method-name">addWorkShift</span>
+                  <span class="parameters">(NightShift, Dominic Chase)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.JobTitlesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addJobTitles(Assistant Manager-QA, QA-Automation, Note-Test)">
+                  </a> <!-- addJobTitles(Assistant Manager-QA, QA-Automation, Note-Test) -->
+                  <span class="method-name">addJobTitles</span>
+                  <span class="parameters">(Assistant Manager-QA, QA-Automation, Note-Test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.PayGradesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPayGrades(Grade-Test)">
+                  </a> <!-- addPayGrades(Grade-Test) -->
+                  <span class="method-name">addPayGrades</span>
+                  <span class="parameters">(Grade-Test)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hrm.testcases.HRMloginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginHRMAdmin(Admin, admin123)">
+                  </a> <!-- loginHRMAdmin(Admin, admin123) -->
+                  <span class="method-name">loginHRMAdmin</span>
+                  <span class="parameters">(Admin, admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -231,22 +378,6 @@ Close]
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.hrm.testcases.WorkShiftTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addWorkShift(NightShift, Dominic Chase)">
-                  </a> <!-- addWorkShift(NightShift, Dominic Chase) -->
-                  <span class="method-name">addWorkShift</span>
-                  <span class="parameters">(NightShift, Dominic Chase)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.hrm.testcases.EmploymentStatusTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -260,105 +391,20 @@ Close]
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hrm.testcases.PayGradesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addPayGrades(Grade-Test)">
-                  </a> <!-- addPayGrades(Grade-Test) -->
-                  <span class="method-name">addPayGrades</span>
-                  <span class="parameters">(Grade-Test)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hrm.testcases.JobCategoryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addJobCategory(Test-QA)">
-                  </a> <!-- addJobCategory(Test-QA) -->
-                  <span class="method-name">addJobCategory</span>
-                  <span class="parameters">(Test-QA)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hrm.testcases.JobTitlesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addJobTitles(Assistant Manager-QA, QA-Automation, Note-Test)">
-                  </a> <!-- addJobTitles(Assistant Manager-QA, QA-Automation, Note-Test) -->
-                  <span class="method-name">addJobTitles</span>
-                  <span class="parameters">(Assistant Manager-QA, QA-Automation, Note-Test)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hrm.testcases.HRMloginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidUsername">
-                  </a> <!-- invalidUsername -->
-                  <span class="method-name">invalidUsername</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidpassword">
-                  </a> <!-- invalidpassword -->
-                  <span class="method-name">invalidpassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginHRMAdmin(Admin, admin123)">
-                  </a> <!-- loginHRMAdmin(Admin, admin123) -->
-                  <span class="method-name">loginHRMAdmin</span>
-                  <span class="parameters">(Admin, admin123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validAdminLogin">
-                  </a> <!-- validAdminLogin -->
-                  <span class="method-name">validAdminLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\HrmProjectPOM\testng.xml</span>
+            <span class="header-content">E:\HrmProjectPOM\src\main\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.hrm.testcases.AdminUserManagmentTest&quot;/&gt;
       &lt;class name=&quot;com.hrm.testcases.HRMloginTest&quot;/&gt;
-      &lt;class name=&quot;com.hrm.baseclass.Base&quot;/&gt;
       &lt;class name=&quot;com.hrm.testcases.ForgotPasswordTest&quot;/&gt;
       &lt;class name=&quot;com.hrm.testcases.DashboardTest&quot;/&gt;
       &lt;class name=&quot;com.hrm.testcases.JobTitlesTest&quot;/&gt;
@@ -393,15 +439,7 @@ Close]
               <span class="test-group-name">Regresssion</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">invalidUsername</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">loginHRMAdmin</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">validAdminLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -421,60 +459,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addWorkShift')
-data.setCell(0, 2, 'com.hrm.testcases.WorkShiftTest')
-data.setCell(0, 3, 20907);
+data.setCell(0, 1, 'addUserInformation')
+data.setCell(0, 2, 'com.hrm.testcases.AdminUserManagmentTest')
+data.setCell(0, 3, 65413);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addJobTitles')
-data.setCell(1, 2, 'com.hrm.testcases.JobTitlesTest')
-data.setCell(1, 3, 17559);
+data.setCell(1, 1, 'loginHRMAdmin')
+data.setCell(1, 2, 'com.hrm.testcases.HRMloginTest')
+data.setCell(1, 3, 22269);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addEmploymentStatus')
-data.setCell(2, 2, 'com.hrm.testcases.EmploymentStatusTest')
-data.setCell(2, 3, 16591);
+data.setCell(2, 1, 'addJobTitles')
+data.setCell(2, 2, 'com.hrm.testcases.JobTitlesTest')
+data.setCell(2, 3, 18385);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addPayGrades')
-data.setCell(3, 2, 'com.hrm.testcases.PayGradesTest')
-data.setCell(3, 3, 16305);
+data.setCell(3, 1, 'addWorkShift')
+data.setCell(3, 2, 'com.hrm.testcases.WorkShiftTest')
+data.setCell(3, 3, 17256);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addJobCategory')
-data.setCell(4, 2, 'com.hrm.testcases.JobCategoryTest')
-data.setCell(4, 3, 15812);
+data.setCell(4, 1, 'addPayGrades')
+data.setCell(4, 2, 'com.hrm.testcases.PayGradesTest')
+data.setCell(4, 3, 16509);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validAdminLogin')
-data.setCell(5, 2, 'com.hrm.testcases.HRMloginTest')
-data.setCell(5, 3, 10874);
+data.setCell(5, 1, 'addEmploymentStatus')
+data.setCell(5, 2, 'com.hrm.testcases.EmploymentStatusTest')
+data.setCell(5, 3, 16092);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginHRMAdmin')
-data.setCell(6, 2, 'com.hrm.testcases.HRMloginTest')
-data.setCell(6, 3, 9730);
+data.setCell(6, 1, 'addJobCategory')
+data.setCell(6, 2, 'com.hrm.testcases.JobCategoryTest')
+data.setCell(6, 3, 15798);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'invalidUsername')
-data.setCell(7, 2, 'com.hrm.testcases.HRMloginTest')
-data.setCell(7, 3, 9659);
+data.setCell(7, 1, 'passWordRest')
+data.setCell(7, 2, 'com.hrm.testcases.ForgotPasswordTest')
+data.setCell(7, 3, 4178);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'passWordRest')
-data.setCell(8, 2, 'com.hrm.testcases.ForgotPasswordTest')
-data.setCell(8, 3, 4756);
+data.setCell(8, 1, 'AssignLeavsLink')
+data.setCell(8, 2, 'com.hrm.testcases.DashboardTest')
+data.setCell(8, 3, 3114);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'invalidpassword')
-data.setCell(9, 2, 'com.hrm.testcases.HRMloginTest')
-data.setCell(9, 3, 3619);
+data.setCell(9, 1, 'LeaveList')
+data.setCell(9, 2, 'com.hrm.testcases.DashboardTest')
+data.setCell(9, 3, 1397);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'AssignLeavsLink')
-data.setCell(10, 2, 'com.hrm.testcases.DashboardTest')
-data.setCell(10, 3, 2250);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'LeaveList')
-data.setCell(11, 2, 'com.hrm.testcases.DashboardTest')
-data.setCell(11, 3, 1159);
+data.setCell(10, 1, 'searchSystemUser')
+data.setCell(10, 2, 'com.hrm.testcases.AdminUserManagmentTest')
+data.setCell(10, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -489,9 +523,81 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.JobCategoryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.ForgotPasswordTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.WorkShiftTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.JobTitlesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.PayGradesTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.HRMloginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.DashboardTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hrm.testcases.EmploymentStatusTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">startExtedReport</span>
+                <br/>
+                <span class="ignored-method-name">endExtedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -500,202 +606,198 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.AdminUserManagmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startExtedReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">login</span>
+                <span class="method-start">37152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addUserInformation(Admin, John Doe, johndoe, Enabled, johndoe9596, johndoe9596)</span>
+                <span class="method-start">60906 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=addUserInformation status=FAILURE method=AdminUserManagmentTest.addUserInformation(...)</span>
+                <span class="method-start">126345 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.HRMloginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidUsername</span>
-                <span class="method-start">54122 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=invalidUsername status=SUCCESS method=HRMloginTest.invalidUsername()[pri:0, instanc...)</span>
-                <span class="method-start">63807 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">65632 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">invalidpassword</span>
-                <span class="method-start">124498 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=invalidpassword status=SUCCESS method=HRMloginTest.invalidpassword()[pri:0, instanc...)</span>
-                <span class="method-start">128120 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">134081 ms</span>
+                <span class="method-start">127643 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginHRMAdmin(Admin, admin123)</span>
-                <span class="method-start">181161 ms</span>
+                <span class="method-start">157834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=loginHRMAdmin status=SUCCESS method=HRMloginTest.loginHRMAdmin(java.lang.String,jav...)</span>
-                <span class="method-start">190892 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">191770 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validAdminLogin</span>
-                <span class="method-start">230737 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validAdminLogin status=SUCCESS method=HRMloginTest.validAdminLogin()[pri:0, instanc...)</span>
-                <span class="method-start">241615 ms</span>
+                <span class="method-start">180105 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.ForgotPasswordTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">242927 ms</span>
+                <span class="method-start">180948 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">passWordRest(subhash)</span>
-                <span class="method-start">278554 ms</span>
+                <span class="method-start">229039 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=passWordRest status=FAILURE method=ForgotPasswordTest.passWordRest(java.lang.String...)</span>
-                <span class="method-start">283314 ms</span>
+                <span class="method-start">233218 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">286961 ms</span>
+                <span class="method-start">234155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">332850 ms</span>
+                <span class="method-start">267903 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AssignLeavsLink</span>
-                <span class="method-start">345311 ms</span>
+                <span class="method-start">282962 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=AssignLeavsLink status=SUCCESS method=DashboardTest.AssignLeavsLink()[pri:0, instan...)</span>
-                <span class="method-start">347562 ms</span>
+                <span class="method-start">286077 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">348552 ms</span>
+                <span class="method-start">286953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">396073 ms</span>
+                <span class="method-start">327686 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LeaveList</span>
-                <span class="method-start">404675 ms</span>
+                <span class="method-start">337340 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=LeaveList status=SUCCESS method=DashboardTest.LeaveList()[pri:0, instance:com.hrm.t...)</span>
-                <span class="method-start">405835 ms</span>
+                <span class="method-start">338738 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.JobTitlesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">407175 ms</span>
+                <span class="method-start">339401 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">459336 ms</span>
+                <span class="method-start">368081 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addJobTitles(Assistant Manager-QA, QA-Automation, Note-Test)</span>
-                <span class="method-start">468638 ms</span>
+                <span class="method-start">377594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addJobTitles status=SUCCESS method=JobTitlesTest.addJobTitles(java.lang.String,java...)</span>
-                <span class="method-start">486200 ms</span>
+                <span class="method-start">395982 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.EmploymentStatusTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">487464 ms</span>
+                <span class="method-start">396537 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">526735 ms</span>
+                <span class="method-start">426687 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addEmploymentStatus(FullTime-QA)</span>
-                <span class="method-start">534246 ms</span>
+                <span class="method-start">442629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addEmploymentStatus status=SUCCESS method=EmploymentStatusTest.addEmploymentStatus(...)</span>
-                <span class="method-start">550839 ms</span>
+                <span class="method-start">458722 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.PayGradesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">552515 ms</span>
+                <span class="method-start">459383 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">626164 ms</span>
+                <span class="method-start">487810 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addPayGrades(Grade-Test)</span>
-                <span class="method-start">637704 ms</span>
+                <span class="method-start">500898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addPayGrades status=SUCCESS method=PayGradesTest.addPayGrades(java.lang.String)[pri...)</span>
-                <span class="method-start">654010 ms</span>
+                <span class="method-start">517410 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.JobCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">658332 ms</span>
+                <span class="method-start">518043 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">705602 ms</span>
+                <span class="method-start">564960 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addJobCategory(Test-QA)</span>
-                <span class="method-start">715480 ms</span>
+                <span class="method-start">573940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addJobCategory status=SUCCESS method=JobCategoryTest.addJobCategory(java.lang.Strin...)</span>
-                <span class="method-start">731294 ms</span>
+                <span class="method-start">589739 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hrm.testcases.WorkShiftTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">732382 ms</span>
+                <span class="method-start">590342 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">login</span>
-                <span class="method-start">769329 ms</span>
+                <span class="method-start">619084 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addWorkShift(NightShift, Dominic Chase)</span>
-                <span class="method-start">778891 ms</span>
+                <span class="method-start">626607 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=addWorkShift status=SUCCESS method=WorkShiftTest.addWorkShift(java.lang.String,java...)</span>
-                <span class="method-start">799799 ms</span>
+                <span class="method-start">643864 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hrm.testcases.AdminUserManagmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">endExtedReport</span>
+                <span class="method-start">644448 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

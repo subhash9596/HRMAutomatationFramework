@@ -7,7 +7,7 @@ import com.hrm.utilities.ExcelUtility;
 
 public class StaticDataProvider extends Base {
 
-	static String excle_path = "Testdata/TestData.xlsx";
+	static String excle_path = "src/test/resources/TestData.xlsx";
 
 	@DataProvider(name = "Login_Data")
 	public Object[][] getloginTestData() {
@@ -50,7 +50,7 @@ public class StaticDataProvider extends Base {
 	}
 
 	@DataProvider(name = "Workshift_Data")
-	public Object[][] getTestData() {
+	public Object[][] getWorkshiftData() {
 		return ExcelUtility.excelIntoArray(excle_path, "WorkShift");
 	}
 

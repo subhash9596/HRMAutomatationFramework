@@ -6,8 +6,8 @@
 </listeners-->
 	<test name="Test" parallel="none" thread-count="2">
 		<classes>
+			<class name="com.hrm.testcases.AdminUserManagmentTest" />
 			<class name="com.hrm.testcases.HRMloginTest" />
-			<class name="com.hrm.baseclass.Base" />
 			<class name="com.hrm.testcases.ForgotPasswordTest" />
 			<class name="com.hrm.testcases.DashboardTest" />
 			<class name="com.hrm.testcases.JobTitlesTest" />
